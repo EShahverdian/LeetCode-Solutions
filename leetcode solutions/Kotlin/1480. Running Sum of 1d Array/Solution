@@ -1,11 +1,11 @@
 class Solution {
-    fun runningSum(nums: IntArray): IntArray {
-        val sums = IntArray(nums.size)
-        sums[0] = nums[0]
-        for (i in 1 until nums.size) {
-            sums[i] = sums[i - 1] + nums[i]
+    fun runningSum(nums: IntArray): IntArray {   /* Function to find and output a array of sums*/
+        val sums = IntArray(nums.size)            /* Initialize new array of the same size as given array*/
+        sums[0] = nums[0]                          /* Set the new arrays first value to that of the given array*/
+        for (i in 1 until nums.size) {             /* initialize for loop with i as 1. loop and iterate through until i reaches array size/last array element. */
+            sums[i] = sums[i - 1] + nums[i]         /* Adds together given arrays first element( i-1) to the next element which is i and stores it in the new array.*/
         }
-        return sums
+        return sums                                 /* return the new array */   
     }
 }
 
