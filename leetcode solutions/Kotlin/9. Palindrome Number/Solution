@@ -1,0 +1,12 @@
+class Solution {
+    fun isPalindrome(x: Int): Boolean {
+        if ( x < 0){
+            return false
+        }
+        
+        val stringInteger = x.toString()
+        val stringReversed = stringInteger.reversed()
+        return stringReversed == stringInteger
+        
+        }
+}
