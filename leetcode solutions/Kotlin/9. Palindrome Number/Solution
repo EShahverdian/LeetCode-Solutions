@@ -1,12 +1,12 @@
 class Solution {
     fun isPalindrome(x: Int): Boolean {
-        if ( x < 0){
+        if ( x < 0){                                    //The reason we want to check if the given integer is a negative number is that a palindrome like "-121" will never be a palindrome "121-". 
             return false
         }
         
-        val stringInteger = x.toString()
-        val stringReversed = stringInteger.reversed()
-        return stringReversed == stringInteger
+        val stringInteger = x.toString()                //convert to string so we can manipulate it
+        val stringReversed = stringInteger.reversed()        //reverse string
+        return stringReversed == stringInteger                //check reversed string against original integer string
         
         }
 }
